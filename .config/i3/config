@@ -165,6 +165,15 @@ bindsym $mod+r mode "resize"
 
 gaps inner 15
 gaps outer 15
+set $mode_gaps Toggle gaps: (1) on (2) off
+bindsym $mod+Shift+g mode "$mode_gaps"
+mode "$mode_gaps" {
+    bindsym 1 mode "default", gaps inner all set 15; gaps outer all set 15
+    bindsym 2 mode "default", gaps inner all set 1; gaps outer all set 1;
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
 for_window [class="^.*"] border pixel 2
 
 exec_always --no-startup-id xinput --set-prop "DELL07E6:00 06CB:76AF Touchpad" "libinput Reverse Scrolling Enabled" 1
