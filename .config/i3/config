@@ -163,8 +163,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-gaps inner 15
-gaps outer 15
+#Uncomment the two lines below to start with gaps on 
+#gaps inner 15
+#gaps outer 15
 set $mode_gaps Toggle gaps: (1) on (2) off
 bindsym $mod+Shift+g mode "$mode_gaps"
 mode "$mode_gaps" {
@@ -192,29 +193,14 @@ exec --no-startup-id xrandr | grep 'HDMI-1-2 connected' && xrandr --output HDMI-
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
-bindsym $mod+ctrl+x exec i3lock -u -p win -t -i /home/sean/Pictures/rsz_alex_desktop.png  
+bindsym $mod+shift+i exec i3lock -u -p win -t -i /home/sean/Pictures/rsz_alex_desktop.png  
+
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
-#Launching applications on startup 
-#exec --no-startup-id i3-msg 'workspace 1:1; exec google-chrome'
+exec --no-startup-id i3-msg 'workspace 4; exec todoist'
+exec "sleep 1; i3-msg workspace 1"
 
-#exec --no-startup-id i3-msg 'workspace 2:2; exec gnome-terminal'
-#exec --no-startup-id i3-msg 'workspace 2:2; exec gnome-terminal'
-#exec --no-startup-id i3-msg 'workspace 2:2; exec gnome-terminal'
-
-#exec --no-startup-id i3-msg 'workspace 3:3; exec code'
-
-#exec --no-startup-id i3-msg 'workspace 4:4; exec slack'
-
-#exec --no-startup-id i3-msg 'workspace 5:5; exec google-chrome'
-
-#exec --no-startup-id i3-msg 'workspace 6:6; exec google-chrome'
-
-#exec --no-startup-id i3-msg 'workspace 8:8; exec google-chrome'
-
-#exec --no-startup-id i3-msg 'workspace 9:9; exec spotify'
-
-
+focus_follows_mouse yes
 
 
 

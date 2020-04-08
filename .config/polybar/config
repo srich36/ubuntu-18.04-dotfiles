@@ -32,8 +32,11 @@ font-0 = NotoSans-Regular:size=9;0
 font-1 = Material\ Icons:size=11;2
 font-2 = xos4\ Terminus:size=14;0
 font-3 = Siji:pixelsize=11;1
-font-4 = FontAwesome:size=11;0
-font-5 = FontAwesome5Brands:size=11;0
+font-4 = "Font Awesome 5 Free-Solid-900"
+font-5 = "Font Awesome 5 Free-Regular-400"
+font-6  = FontAwesome5Brands:size=11;0
+font-7 = FontAwesome:size=11;0
+font-8 = "Font Awesome 5 Brands-Regular-400"
 
 
 modules-left = i3
@@ -78,15 +81,16 @@ padding-right = 4
 module-margin-left = 0 
 module-margin-right = 6
 
-;font-0 = NotoSans-Regular:size=10;0
 font-0 = NotoSans-Regular:size=9;0
 font-1 = Material\ Icons:size=11;2
 font-2 = xos4\ Terminus:size=14;0
 font-3 = Siji:pixelsize=11;1
-font-4 = FontAwesome:size=11;0
-font-5 = FontAwesome5Brands:size=11;0
+font-4 = "Font Awesome 5 Free-Solid-900"
+font-5 = "Font Awesome 5 Free-Regular-400"
+font-6  = FontAwesome5Brands:size=11;0
+font-7 = FontAwesome:size=11;0
+font-8 = "Font Awesome 5 Brands-Regular-400"
 
-modules-left = i3
 modules-right =  cpu memory
 
 [module/backlight]
@@ -435,9 +439,9 @@ fuzzy-match = true
 ws-icon-0 = 1;
 ws-icon-1 = 2;
 ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;%{T6}%{T-}
-ws-icon-5 = 6;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;%{T6}%{T-}
 ws-icon-6 = 7;
 ws-icon-7 = 8;
 ws-icon-8 = 9;
